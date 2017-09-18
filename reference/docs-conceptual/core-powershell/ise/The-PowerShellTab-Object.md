@@ -10,13 +10,13 @@ ms.assetid:  a9b58556-951b-4f48-b3ae-b351b7564360
 
 ## Methods
 
-###  <a name="invoke"></a> Invoke\( Script \)
+### Invoke\( Script \)
   Supported in Windows PowerShell ISE 2.0 and later. 
 
  Runs the given script in the PowerShell tab.
 
 > [!NOTE]
->  This method only works on other PowerShell tabs, not the PowerShell tab from which it is run. It does not return any object or value. If the code modifies any variable, then those changes persist on the tab against which the command was invoked.
+> This method only works on other PowerShell tabs, not the PowerShell tab from which it is run. It does not return any object or value. If the code modifies any variable, then those changes persist on the tab against which the command was invoked.
 
  **Script** - System.Management.Automation.ScriptBlock or String
  The script block to run.
@@ -33,7 +33,7 @@ $psise.PowerShellTabs[1].Invoke({dir})
  Runs the given script in the PowerShell tab.
 
 > [!NOTE]
->  This method only works on other PowerShell tabs, not the PowerShell tab from which it is run. The script block is run and any value that is returned from the script is returned to the run environment from which you invoked the command. If the command takes longer to run than the **millesecondsTimeout** value specifies, then the command fails with an exception: "The operation has timed out."
+> This method only works on other PowerShell tabs, not the PowerShell tab from which it is run. The script block is run and any value that is returned from the script is returned to the run environment from which you invoked the command. If the command takes longer to run than the **millesecondsTimeout** value specifies, then the command fails with an exception: "The operation has timed out."
 
  **Script** - System.Management.Automation.ScriptBlock or String
  The script block to run.
@@ -51,7 +51,7 @@ $psISE.PowerShellTabs.SetSelectedPowerShellTab($psISE.PowerShellTabs[0])
 
 # Invoke a simple command on the other tab, in its own scope
 $psISE.PowerShellTabs[1].InvokeSynchronous('$x=1',$false)
-# You can switch to the other tab and type “$x” to see that the value is saved there.
+# You can switch to the other tab and type 'œ$x' to see that the value is saved there.
 
 # This example sets a value in the other tab (in a different scope) 
 # and returns it through the pipeline to this tab to store in $a
@@ -66,7 +66,7 @@ measure-command {$psISE.PowerShellTabs[1].InvokeSynchronous("sleep 10",$false,50
 
 ## Properties
 
-###  <a name="AddOnsMenu"></a> AddOnsMenu
+### AddOnsMenu
   Supported in Windows PowerShell ISE 2.0 and later. 
 
  The read-only property that gets the Add-ons menu for the PowerShell tab.
@@ -84,10 +84,10 @@ $parentAdded.SubMenus.Add("_Dir",{dir},"Alt+D")
 $psISE.CurrentPowerShellTab.AddOnsMenu
 ```
 
-###  <a name="CanExecute"></a> CanInvoke
+### CanInvoke
   Supported in Windows PowerShell ISE 2.0 and later. 
 
- The read-only Boolean property that returns a **$true** value if a script can be invoked with the [Invoke( Script )](#invoke) method.
+ The read-only Boolean property that returns a **$true** value if a script can be invoked with the [Invoke( Script )](#invoke-script-) method.
 
 ```
 # CanInvoke will be false if the PowerShell
@@ -103,7 +103,7 @@ $secondTab.CanInvoke
 
 ```
 
-###  <a name="Commandpane"></a> Consolepane
+### Consolepane
   Supported in Windows PowerShell ISE 3.0 and later, and not present in earlier versions.  In Windows PowerShell ISE 2.0 this was named **CommandPane**.
 
  The read-only property that gets the Console pane [editor](../ise/The-ISEEditor-Object.md) object.
@@ -114,7 +114,7 @@ $psISE.CurrentPowerShellTab.ConsolePane
 
 ```
 
-###  <a name="Displayname"></a> DisplayName
+### DisplayName
   Supported in Windows PowerShell ISE 2.0 and later. 
 
  The read-write property that gets or sets the text that is displayed on the PowerShell tab. By default, tabs are named "PowerShell #", where the # represents a number.
@@ -125,7 +125,7 @@ $newTab = $psise.PowerShellTabs.Add()
 $newTab.DisplayName="Brand New Tab"
 ```
 
-###  <a name="ExpandedScript"></a> ExpandedScript
+### ExpandedScript
   Supported in Windows PowerShell ISE 2.0 and later. 
 
  The read-write Boolean property that determines whether the Script pane is expanded or hidden.
@@ -136,7 +136,7 @@ $PSise.CurrentPowerShellTab.ExpandedScript=!$PSise.CurrentPowerShellTab.Expanded
 
 ```
 
-###  <a name="Files"></a> Files
+### Files
   Supported in Windows PowerShell ISE 2.0 and later. 
 
  The read-only property that gets the [collection of script files](../ise/The-ISEFileCollection-Object.md) that are open in the PowerShell tab.
@@ -148,7 +148,7 @@ $newFile.Editor.Text = "a`r`nb"
 $newFile.Editor.LineCount
 ```
 
-###  <a name="Output"></a> Output
+### Output
   This feature is present in Windows PowerShell ISE 2.0, but was removed or renamed in later versions of the ISE.  In later versions of Windows PowerShell ISE, you can use the **ConsolePane** object for the same purposes.
 
  The read-only property that gets the Output pane of the current [editor](../ise/The-ISEEditor-Object.md).
@@ -158,17 +158,17 @@ $newFile.Editor.LineCount
 $psise.CurrentPowerShellTab.output.clear()
 ```
 
-###  <a name="Prompt"></a> Prompt
+### Prompt
   Supported in Windows PowerShell ISE 2.0 and later. 
 
- The read-only property that gets the current prompt text. Note: the **Prompt** function can be overridden by the user’s profile. If the result is other than a simple string, then this property returns nothing.
+ The read-only property that gets the current prompt text. Note: the **Prompt** function can be overridden by the user'™s profile. If the result is other than a simple string, then this property returns nothing.
 
 ```
 # Gets the current prompt text.
 $psISE.CurrentPowerShellTab.Prompt
 ```
 
-###  <a name="ShowCommands"></a> ShowCommands
+### ShowCommands
   Supported in Windows PowerShell ISE 3.0 and later, and not present in earlier versions. 
 
  The read-write property that indicates if the Commands pane is currently displayed.
@@ -180,7 +180,7 @@ $a = $psISE.CurrentPowerShellTab.ShowCommands
 if (!$a) {$psISE.CurrentPowerShellTab.ShowCommands=$True}
 ```
 
-###  <a name="StatusText"></a> StatusText
+### StatusText
   Supported in Windows PowerShell ISE 2.0 and later. 
 
  The read-only property that gets the **PowerShellTab** status text.
@@ -190,7 +190,7 @@ if (!$a) {$psISE.CurrentPowerShellTab.ShowCommands=$True}
 $psISE.CurrentPowerShellTab.StatusText
 ```
 
-###  <a name="HorizontalAddOnToolsPaneOpened"></a> HorizontalAddOnToolsPaneOpened
+### HorizontalAddOnToolsPaneOpened
   Supported in Windows PowerShell ISE 3.0 and later, and not present in earlier versions. 
 
  The read-only property that indicates whether the horizontal Add-Ons tool pane is currently open.
@@ -200,7 +200,7 @@ $psISE.CurrentPowerShellTab.StatusText
 $psISE.CurrentPowerShellTab.HorizontalAddOnToolsPaneOpened
 ```
 
-###  <a name="VerticalAddOnToolsPaneOpened"></a> **VerticalAddOnToolsPaneOpened**
+### VerticalAddOnToolsPaneOpened
   Supported in Windows PowerShell ISE 3.0 and later, and not present in earlier versions. 
 
  The read-only property that indicates whether the vertical Add-Ons tool pane is currently open.
