@@ -186,6 +186,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+![Note](https://github.com/ScottEP/Misc/blob/master/snote.png)
 ### -ExpandProperty
 Specifies a property to select, and indicates that an attempt should be made to expand that property.
 Wildcards are permitted in the property name.
