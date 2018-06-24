@@ -269,8 +269,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-![SEBKIM](https://github.com/ScottEP/Misc/blob/master/snote.png)
-<img src="https://lh3.googleusercontent.com/Z4BPYmgyTdn1zBiWDtyn_422tS67HAB0ieRnZRcgY_aG8trLC8Sa2_VzzibCcKXYNbTwxuIU83xX8g=w1567-h946" alt="SEBKIM" align="right"/>
+<img src="https://raw.githubusercontent.com/ScottEP/Misc/master/snote.png" alt="SEBKIM" align="right"/>
 
 ### -ExpandProperty
 
