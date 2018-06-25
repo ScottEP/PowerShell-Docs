@@ -269,6 +269,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+<img src="https://raw.githubusercontent.com/ScottEP/Misc/master/HLineRed2560x8.png"/>
+
 <img src="https://raw.githubusercontent.com/ScottEP/Misc/master/snote.png" alt="SEBKIM" align="right"/>
 
 ### -ExpandProperty
@@ -301,6 +303,8 @@ Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
+
+<img src="https://raw.githubusercontent.com/ScottEP/Misc/master/HLineRed2560x8.png"/>
 
 ### -First
 
