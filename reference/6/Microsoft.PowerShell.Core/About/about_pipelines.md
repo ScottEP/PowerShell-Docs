@@ -391,12 +391,14 @@ parameters are designed to take input from the pipeline easily.
 
 <img src="https://raw.githubusercontent.com/ScottEP/Misc/master/HLineRed2560x8.png"/>
 
-> [!NOTE]
-> **SEBKIM: Also KIM: -OutVariable parameter**
-
-<img src="https://raw.githubusercontent.com/ScottEP/Misc/master/snote.png" alt="SEBKIM" align="right"/>
+<img src="https://raw.githubusercontent.com/ScottEP/Misc/master/snote.png" alt="SEBNOTE" align="right"/>
 
 ## Investigating Pipeline Errors
+
+> [!NOTE]
+> **SEBNOTE:** Also KIM: `-OutVariable` parameter
+>
+> **SEBNOTE:** Also KIM: [Getting data from the middle of a PowerShell pipeline](https://powershellstation.com/2018/06/24/getting-data-from-the-middle-of-a-powershell-pipeline/)
 
 If a command fails because of a pipeline error, you can investigate the
 failure and rewrite the command.
@@ -429,7 +431,7 @@ At line:1 char:23
 + $a | Move-ItemProperty <<<<  -Path HKLM:\software\mycompany\design -Name p
 ```
 
-<img src="https://raw.githubusercontent.com/ScottEP/Misc/master/tnote.png" alt="SEBKIM" align="right"/>
+<img src="https://raw.githubusercontent.com/ScottEP/Misc/master/tnote.png" alt="SEBNOTE" align="right"/>
 
 To investigate, use the `Trace-Command` cmdlet to trace the Parameter Binding
 component of PowerShell. The following command traces the Parameter Binding
