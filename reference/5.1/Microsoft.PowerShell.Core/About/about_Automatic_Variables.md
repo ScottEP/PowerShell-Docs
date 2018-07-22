@@ -6,7 +6,13 @@ keywords:  powershell,cmdlet
 title:  about_Automatic_Variables
 ---
 
+<img src="https://raw.githubusercontent.com/ScottEP/Misc/master/HLineRed2560x8.png"/>
+
+<img src="https://raw.githubusercontent.com/ScottEP/Misc/master/snote.png" alt="SEBNOTE" align="right"/>
+
 # About Automatic Variables
+
+<img src="https://raw.githubusercontent.com/ScottEP/Misc/master/HLineRed2560x8.png"/>
 
 ## SHORT DESCRIPTION
 
