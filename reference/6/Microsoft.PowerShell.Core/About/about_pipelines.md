@@ -391,7 +391,7 @@ parameters are designed to take input from the pipeline easily.
 
 <img src="https://raw.githubusercontent.com/ScottEP/Misc/master/HLineRed2560x8.png"/>
 
-<img src="https://raw.githubusercontent.com/ScottEP/Misc/master/snote.png" alt="SEBNOTE" align="right"/>
+<img src="https://raw.githubusercontent.com/ScottEP/Misc/master/snote.png" alt="SEBNOTE" align="right"/><!-- SEBNOTE -->
 
 ## Investigating Pipeline Errors
 
@@ -431,7 +431,7 @@ At line:1 char:23
 + $a | Move-ItemProperty <<<<  -Path HKLM:\software\mycompany\design -Name p
 ```
 
-<img src="https://raw.githubusercontent.com/ScottEP/Misc/master/tnote.png" alt="SEBNOTE" align="right"/>
+<img src="https://raw.githubusercontent.com/ScottEP/Misc/master/tnote.png" alt="SEBNOTE" align="right"/><!-- SEBNOTE -->
 
 To investigate, use the `Trace-Command` cmdlet to trace the Parameter Binding
 component of PowerShell. The following command traces the Parameter Binding

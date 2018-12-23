@@ -271,7 +271,7 @@ Accept wildcard characters: False
 
 <img src="https://raw.githubusercontent.com/ScottEP/Misc/master/HLineRed2560x8.png"/>
 
-<img src="https://raw.githubusercontent.com/ScottEP/Misc/master/snote.png" alt="SEBNOTE" align="right"/>
+<img src="https://raw.githubusercontent.com/ScottEP/Misc/master/snote.png" alt="SEBNOTE" align="right"/><!-- SEBNOTE -->
 
 ### -ExpandProperty
 
